@@ -1,0 +1,46 @@
+; Tue Mar 28 22:28:51 GMT 2017
+; 
+;+ (version "3.2")
+;+ (build "Build 355")
+
+([ontology_Instance_10] of  opposite_relative_traits
+
+	(name1 "respect")
+	(name2 "lack_of_respect"))
+
+([ontology_Instance_11] of  opposite_relative_traits
+
+	(name1 "lack_of_respect")
+	(name2 "respect"))
+
+([ontology_Instance_12] of  at_least_one_with_personal_trait1_has_relative_trait2_with_any_with_personal_trait3
+
+	(personal_trait1 "mentor")
+	(personal_trait3 "programmer")
+	(relative_trait2 "respect"))
+
+([ontology_Instance_13] of  all_with_personal_trait1_has_relative_trait2_with_any_with_personal_trait3
+
+	(personal_trait1 "mentor")
+	(personal_trait3 "slacker")
+	(relative_trait2 "lack_of_respect"))
+
+([ontology_Instance_5] of  personal_trait
+
+	(name1 "mentor"))
+
+([ontology_Instance_6] of  personal_trait
+
+	(name1 "programmer"))
+
+([ontology_Instance_7] of  personal_trait
+
+	(name1 "slacker"))
+
+([ontology_Instance_8] of  relative_trait
+
+	(name1 "respect"))
+
+([ontology_Instance_9] of  relative_trait
+
+	(name1 "lack_of_respect"))

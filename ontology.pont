@@ -1,0 +1,137 @@
+; Tue Mar 28 22:28:51 GMT 2017
+; 
+;+ (version "3.2")
+;+ (build "Build 355")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot relative_trait2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personal_trait2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personal_trait1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personal_trait3
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass personal_trait
+	(is-a USER)
+	(role concrete)
+	(single-slot name1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass relative_trait
+	(is-a USER)
+	(role concrete)
+	(single-slot name1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass opposite_relative_traits
+	(is-a USER)
+	(role concrete)
+	(single-slot name2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass at_least_one_with_personal_trait1_has_relative_trait2_with_any_with_personal_trait3
+	(is-a USER)
+	(role concrete)
+	(single-slot personal_trait3
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot relative_trait2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personal_trait1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass all_with_personal_trait1_has_relative_trait2_with_any_with_personal_trait3
+	(is-a USER)
+	(role concrete)
+	(single-slot personal_trait3
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot relative_trait2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personal_trait1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass none_with_personal_trait1_has_relative_trait2_with_any_with_personal_trait3
+	(is-a USER)
+	(role concrete)
+	(single-slot personal_trait3
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot relative_trait2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personal_trait1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass no_persons_share_personal_traits
+	(is-a USER)
+	(role concrete)
+	(single-slot personal_trait2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personal_trait1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass none_with_personal_trait1_has_personal_trait2
+	(is-a USER)
+	(role concrete)
+	(single-slot personal_trait2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personal_trait1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass lab1_proof_goal_reached
+	(is-a USER)
+	(role concrete))
