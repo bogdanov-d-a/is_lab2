@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY kb 'http://protege.stanford.edu/kb#'>
+	 <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:kb="&kb;"
+	 xmlns:rdfs="&rdfs;">
+<kb:opposite_relative_traits rdf:about="&kb;ontology_Instance_10"
+	 kb:name1="respect"
+	 kb:name2="lack_of_respect"
+	 rdfs:label="ontology_Instance_10"/>
+<kb:opposite_relative_traits rdf:about="&kb;ontology_Instance_11"
+	 kb:name1="lack_of_respect"
+	 kb:name2="respect"
+	 rdfs:label="ontology_Instance_11"/>
+<kb:at_least_one_with_personal_trait1_has_relative_trait2_with_any_with_personal_trait3 rdf:about="&kb;ontology_Instance_12"
+	 kb:personal_trait1="mentor"
+	 kb:personal_trait3="programmer"
+	 kb:relative_trait2="respect"
+	 rdfs:label="ontology_Instance_12"/>
+<kb:all_with_personal_trait1_has_relative_trait2_with_any_with_personal_trait3 rdf:about="&kb;ontology_Instance_13"
+	 kb:personal_trait1="mentor"
+	 kb:personal_trait3="slacker"
+	 kb:relative_trait2="lack_of_respect"
+	 rdfs:label="ontology_Instance_13"/>
+<kb:personal_trait rdf:about="&kb;ontology_Instance_5"
+	 kb:name1="mentor"
+	 rdfs:label="ontology_Instance_5"/>
+<kb:personal_trait rdf:about="&kb;ontology_Instance_6"
+	 kb:name1="programmer"
+	 rdfs:label="ontology_Instance_6"/>
+<kb:personal_trait rdf:about="&kb;ontology_Instance_7"
+	 kb:name1="slacker"
+	 rdfs:label="ontology_Instance_7"/>
+<kb:relative_trait rdf:about="&kb;ontology_Instance_8"
+	 kb:name1="respect"
+	 rdfs:label="ontology_Instance_8"/>
+<kb:relative_trait rdf:about="&kb;ontology_Instance_9"
+	 kb:name1="lack_of_respect"
+	 rdfs:label="ontology_Instance_9"/>
+</rdf:RDF>
